@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupViewController" customModule="AllCountries" customModuleProvider="target">
+            <connections>
+                <outlet property="bordersLabel" destination="MOa-qN-SpT" id="H63-ta-7uW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICJ-wl-6Cj">
+                    <rect key="frame" x="37.5" y="277" width="300" height="133"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Borders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrE-0f-Z18">
+                            <rect key="frame" x="13.5" y="36" width="63.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No borders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-qN-SpT">
+                            <rect key="frame" x="13.5" y="62" width="86" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-aJ-3Yh">
+                            <rect key="frame" x="270" y="0.0" width="30" height="30"/>
+                            <state key="normal" title="X"/>
+                            <connections>
+                                <action selector="cancelAction:" destination="-1" eventType="touchUpInside" id="wgK-ry-ViK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="SI2-aJ-3Yh" secondAttribute="trailing" id="0cm-fS-JtW"/>
+                        <constraint firstItem="CrE-0f-Z18" firstAttribute="centerX" secondItem="ICJ-wl-6Cj" secondAttribute="centerX" multiplier="0.3" id="4KU-lY-GId"/>
+                        <constraint firstItem="MOa-qN-SpT" firstAttribute="top" secondItem="CrE-0f-Z18" secondAttribute="bottom" constant="5" id="8fT-ZW-Qfi"/>
+                        <constraint firstItem="MOa-qN-SpT" firstAttribute="leading" secondItem="CrE-0f-Z18" secondAttribute="leading" id="N1E-Gl-WFz"/>
+                        <constraint firstItem="CrE-0f-Z18" firstAttribute="centerY" secondItem="ICJ-wl-6Cj" secondAttribute="centerY" multiplier="0.7" id="ixx-4m-IOP"/>
+                        <constraint firstItem="SI2-aJ-3Yh" firstAttribute="top" secondItem="ICJ-wl-6Cj" secondAttribute="top" id="tbC-Rd-LTk"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ICJ-wl-6Cj" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="CNH-hl-0cR"/>
+                <constraint firstItem="ICJ-wl-6Cj" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="IG8-fz-uWQ"/>
+                <constraint firstItem="ICJ-wl-6Cj" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.8" id="JNc-AF-CDU"/>
+                <constraint firstItem="ICJ-wl-6Cj" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.2" id="jfE-LD-twM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
